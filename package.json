@@ -1,0 +1,9 @@
+{
+  "name": "saldo-latas-fora-da-lei",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "mercadopago": "^2.0.0",
+    "googleapis": "^140.0.0"
+  }
+}
