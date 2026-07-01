@@ -95,7 +95,7 @@ input[type=text]:focus{outline:none;border-color:var(--accent)}
         <span class="pill">50% OFF</span>
       </div>
       <span class="scar">🔥 Poucas unidades · edição exclusiva do evento</span>
-      <div style="margin-top:8px;color:#6f6557;font-size:14.5px">Prefere poucas? <b style="color:#221c15">Lata avulsa por R$ 20</b> <span style="text-decoration:line-through;color:#a79c8c">R$ 25</span></div>
+      <div style="margin-top:8px;color:#6f6557;font-size:14.5px">Prefere poucas? <b style="color:#221c15">Lata avulsa por R$ 15</b> <span style="text-decoration:line-through;color:#a79c8c">R$ 25</span></div>
 
       <hr>
 
@@ -133,7 +133,7 @@ input[type=text]:focus{outline:none;border-color:var(--accent)}
         <div class="qty"><button type="button" id="minusP">−</button><span id="qtdP">1</span><button type="button" id="plusP">+</button></div>
       </div>
       <div class="item" id="itemUnit">
-        <div class="iteminfo"><b>Latas avulsas</b><small>R$ 20,00 cada · de R$ 25 · <span id="leftUnits">100</span> disponíveis</small></div>
+        <div class="iteminfo"><b>Latas avulsas</b><small>R$ 15,00 cada · de R$ 25 · <span id="leftUnits">100</span> disponíveis</small></div>
         <div class="qty"><button type="button" id="minusU">−</button><span id="qtdU">0</span><button type="button" id="plusU">+</button></div>
       </div>
 
@@ -169,7 +169,7 @@ var qtdP=document.getElementById('qtdP'), qtdU=document.getElementById('qtdU');
 var leftPacks=document.getElementById('leftPacks'), leftUnits=document.getElementById('leftUnits');
 var itemPack=document.getElementById('itemPack'), itemUnit=document.getElementById('itemUnit');
 function fmt(n){return 'R$ '+n+',00';}
-function total(){ return packsQty*150 + unitsQty*20 + frete; }
+function total(){ return packsQty*150 + unitsQty*15 + frete; }
 function atualiza(){ totalval.textContent=fmt(total()); }
 function tipoAtual(){ return document.querySelector('input[name=entrega]:checked').value; }
 

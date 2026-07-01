@@ -80,14 +80,14 @@ module.exports = async (req, res) => {
     if (units > 0) items.push({
       title: 'Lata Predileta Cream Ale 473ml (avulsa)',
       description: 'Saldo do Fora da Lei Rock Festival, lata colecionavel avulsa',
-      quantity: units, unit_price: 20, currency_id: 'BRL',
+      quantity: units, unit_price: 15, currency_id: 'BRL',
     });
     if (entrega) items.push({
       title: 'Entrega em Porto Alegre',
       quantity: 1, unit_price: 20, currency_id: 'BRL',
     });
 
-    const valorTotal = packs * 150 + units * 20 + (entrega ? 20 : 0);
+    const valorTotal = packs * 150 + units * 15 + (entrega ? 20 : 0);
 
     // Cria preferência no Mercado Pago
     const preference = new Preference(mp);
